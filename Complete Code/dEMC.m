@@ -61,7 +61,7 @@ if isfield(G, 'complex')
 else
     % Automatically determine complexity based on scattering mean free path and voxel size
     lt_min = min(lt);
-    voxel_size = Camera.Size_per_Pixel;
+    voxel_size = Size_per_Pixel;
     ratio = lt_min / voxel_size;
     
     if ratio > 100
